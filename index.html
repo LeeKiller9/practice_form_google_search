@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form search</title>
+    <style>
+        body {
+            background-color: lightgray;
+            width: 40%;
+        }
+        input[type=text]{
+            display: inline-block;
+            width: 100%;
+        }
+        input[type=submit]{
+            display: inline-block;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://www.google.com/search" method="get">
+        <label>Search on Google (GET)
+            <input type="text" name="q">
+            <input type="submit" value="Search">
+        </label>
+    </form>
+    <form action="https://www.bing.com/search" method="get">
+        <label>Search on Bing (GET)
+            <input type="text" name="q">
+            <input type="submit" value="Search">
+        </label>
+    </form>
+    <form action="https://www.google.com/search" method="post">
+        <label>Search on Google (POST)
+            <input type="text" name="q">
+            <input type="submit" value="Search">
+        </label>
+    </form>
+</body>
+</html>
